@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Header Designs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            color: white;
+        }
+        header a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        header a::before, header a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        header a::before {
+            top: 0;
+            left: 0;
+            transform-origin: left;
+        }
+        header a::after {
+            bottom: 0;
+            right: 0;
+            transform-origin: right;
+        }
+        header a:hover::before, header a:hover::after {
+            transform: scaleX(1);
+        }
+        header hr {
+            border: none;
+            border-top: 2px solid white;
+            margin: 10px 0;
+        }
+        .header1 {
+            background-color: mediumpurple;
+        }
+        .header2 {
+            background-color: rgb(155, 148, 132);
+        }
+        .header3 {
+            background-color: dodgerblue;
+        }
+        .header4 {
+            background-color: rgb(151, 9, 9);
+        }
+        .header5 {
+            background-color: rgb(131, 4, 91);
+        }
+        .header-title {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Design 1 -->
+    <header class="header1">
+        <div class="header-title">Design 1: College Dropout</div>
+        <img src="Image 1.jpg" alt="">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Services</a>
+        <hr>
+    </header>
+
+    <!-- Header Design 2 -->
+    <header class="header2">
+        <div class="header-title">Design 2: BBL Drizzy</div>
+        <img src="image 2.jpg" alt="">
+        <a href="#">Series</a>
+        <a href="#">Movies</a>
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+        <button style="background-color: white; color: goldenrod; border: none; padding: 5px 10px; cursor: pointer;">Buy Now</button>
+        <hr>
+    </header>
+
+    <!-- Header Design 3 -->
+    <header class="header3">
+        <div class="header-title">Design 3: M.A.A.D City</div>
+        <img src="image 3.jpg" alt="">
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Production</a>
+        <a href="#">Contact</a>
+        <img src="logo 3.jpg" alt="Logo" style="vertical-align: middle; margin-left: 10px;">
+        <hr>
+    </header>
+
+    <!-- Header Design 4 -->
+    <header class="header4">
+        <div class="header-title">Design 4: FWAEH</div>
+        <img src="image 4.jpg" alt="">
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Cinematography</a>
+        <a href="#">Contact</a>
+        <hr>
+    </header>
+
+    <!-- Header Design 5 -->
+    <header class="header5">
+        <div class="header-title">Design 5: Scott and Ramona</div>
+        <img src="image 5.jpg" alt="">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Services</a>
+        <hr>
+    </header>
+
+    <main>
+        <h4>Check out these cool moves:</h4>
+        <div class="images">
+            <!-- Static Images -->
+            <img src="Static image 1.jpg" alt="Static Image 1">
+            <img src="static image 2.jpg" alt="Static Image 2">
+            <img src="static image 3.jpg" alt="Static Image 3">
+            <img src="static image 4.jpg" alt="Static Image 4">
+            <img src="static image 5.jpg" alt="Static Image 5">
+        </div>
+        <p>If Pirus and Crips all got along
+            They'd probably gun me down by the end of this song</p>
+    </main>
+
+    <footer style="background-color: mediumpurple">
+        <hr>
+        author: Kayn Uzi Vert<br>
+        &copy; copyright reserved<br>
+        <small><a href="mailto:BroCode@fake.com">JerokeeUZIVert.com</a></small>
+    </footer>
+</body>
+</html>
